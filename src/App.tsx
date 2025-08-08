@@ -1,12 +1,14 @@
-import React from "react"
+import React from 'react';
+import Router from './routes/Router';
+import GlobalStyle from './assets/Globalstyle';
 
-function App() {
+const App: React.FC = () => {
     return (
-      <div className="text-2xl font-bold text-blue-600">
-        2025 Portfolio with React + TypeScript + Tailwind!
-      </div>
-    )
-  }
-  
-  export default App
-  
+        <>
+            <GlobalStyle />
+            <Router />
+        </>
+    );
+};
+
+export default App;
